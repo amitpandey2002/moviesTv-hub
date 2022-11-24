@@ -1,0 +1,33 @@
+.carouselItem {
+    display: flex;
+    flex-direction: column;
+    object-fit: contain;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+
+  }
+  .carouselItem_img {
+    border-radius: 10px;
+    margin-bottom: 5px;
+    height: fit-content;
+    box-shadow: 0px 0px 5px black;
+  }
+
+  @media (max-width: 835px) {
+    .carouselItem {
+      display: none; 
+      flex-direction: column;
+      object-fit: contain;
+      padding: 10px;
+      height: 50%;
+    }
+    .carouselItem_txt{
+      font-size: 14px;
+    }
+    .carouselItem_img
+    {
+      /* display: none; */
+    }
+  }

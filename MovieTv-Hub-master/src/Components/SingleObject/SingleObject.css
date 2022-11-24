@@ -1,0 +1,37 @@
+.media{
+    display: flex;
+    flex-direction: column;
+    width: 225px;
+    margin: 6px 0;
+    padding: 6px;
+    background-color: rgb(48, 49, 49);
+    border-radius: 10px;
+    font-family: "Montessarat",sans-serif;
+    position: relative;
+}
+.media:hover{
+    background-color: #fff;
+    color: black;
+}
+@media (max-width:600px)
+{
+    .media{
+        width: 40%;
+    }
+}
+.poster{
+    border-radius: 10px;
+}
+
+.title{
+    text-align: center;
+    padding: 8px 0;
+    font-size: 17px;
+    width: 100%;
+}
+.subtitle{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2px;
+    padding-bottom: 3px;
+}

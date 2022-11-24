@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+
+
+.ObjectModal_landscape {
+  object-fit: contain;
+  border-radius: 10px;
+  height: 40%;
+}
+
+.ObjectModal_portrait {
+  display: none;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.tagline {
+  padding-bottom: 10px;
+  align-self: center;
+}
+
+.ObjectModal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  /* justify-content: center; */
+  height: 100%;
+  width: 100%;
+  overflow: scroll;
+  /* overflow-y: scroll; */
+  scrollbar-width: none;
+}
+
+.ObjectModal::-webkit-scrollbar {
+  display: none;
+}
+
+.ObjectModal_about {
+  padding: 10px;
+  width: 95%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  justify-content: space-evenly;
+  font-weight: 300;
+}
+
+.ObjectModal_title {
+  height: 12%;
+  font-size: 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ObjectModal_description {
+  display: flex;
+  height: fit-content;
+  /* overflow-y: scroll; */
+  font-size: 14px;
+  overflow-y: auto;
+  padding: 15px;
+  border-radius: 20px;
+  /* scrollbar-width: thin; Firefox */
+  scrollbar-width: auto;
+  box-shadow: inset 0 0 5px #000000;
+  text-align: justify;
+}
+
+.ObjectModal_description::-webkit-scrollbar {
+  display: none;
+}
+
+@media (min-width: 835px) {
+  .ObjectModal_landscape {
+    display: none;
+    
+  }
+  .ObjectModal_portrait {
+    display: flex;
+    width: 38%;
+    scrollbar-width: auto;
+  }
+  .ObjectModal {
+    flex-direction: row;
+    justify-content: space-around;
+    scrollbar-width: auto;
+    padding: 10px 0;
+  }
+  .ObjectModal_about {
+    width: 58%;
+    padding: 0;
+    scrollbar-width: auto;
+    height: 100%;
+  }
+  .ObjectModal_title {
+    font-size: 3.0vw;
+  }
+  .ObjectModal_description {
+    font-size: 18px;
+    height: fit-content;
+  }
+}
